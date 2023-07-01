@@ -22,10 +22,9 @@ export class AppareilService {
 
   async update(appareil: Appareil, id: string) {
     const a = await this.appareil.findByPk(id);
-    if (!a) {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      this.appareil.update({id}, appareil).then((value) => {
+    if (a) {
+      return this.appareil.update({alume: appareil.alume, description: appareil.description}, {where:{id}}).then((value) => {
+        console.log(value);
         return value;
       });
     }

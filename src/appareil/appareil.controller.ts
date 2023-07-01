@@ -1,4 +1,4 @@
-import {Body, Controller, Delete, Get, Param, Post} from '@nestjs/common';
+import {Body, Controller, Delete, Get, Param, Post, Put} from '@nestjs/common';
 import {AppareilService} from "./appareil.service";
 import {Appareil} from "./model/appareil.model";
 
@@ -10,7 +10,7 @@ export class AppareilController {
     create(@Body() newOpject: Appareil){
         return this.appareilService.create(newOpject);
     }
-    @Post('/:id')
+    @Put('/:id')
     update(@Body() updatedOpject: any, @Param('id') id:string){
         return this.appareilService.update(updatedOpject, id);
     }
