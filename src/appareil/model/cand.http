@@ -77,7 +77,7 @@ GET http://localhost:3000/candidat/6444bb8b756c7d0d2a7cb99c
 Accept: application/json
 
 ### Send GET all candidat request
-GET http://localhost:3000/appareil/1
+GET http://localhost:3000/appareil
 Accept: application/json
 
 ### Send GET orgnisation candidat request

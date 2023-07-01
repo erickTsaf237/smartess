@@ -9,10 +9,10 @@ import { Appareil } from './appareil/model/appareil.model';
   imports: [
     SequelizeModule.forRoot({
       dialect: 'mysql',
-      host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: '',
+      host: 'mysql-133953-0.cloudclusters.net',
+      port: 19553,
+      username: 'admin',
+      password: 'IppuvZhN',
       database: 'smartess',
       models: [Appareil],
       autoLoadModels: true,

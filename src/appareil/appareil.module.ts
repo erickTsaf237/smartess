@@ -9,4 +9,5 @@ import { Appareil } from './model/appareil.model';
   controllers: [AppareilController],
   providers: [AppareilService],
 })
+
 export class AppareilModule {}
