@@ -1,7 +1,7 @@
 
 
 ### Send POST candidat request with json body
-POST http://localhost:3000/appareil
+POST https://smartess.adaptable.app/appareil
 Content-Type: application/json
 
 {
