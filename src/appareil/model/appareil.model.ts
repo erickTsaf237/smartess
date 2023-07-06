@@ -5,6 +5,9 @@ export class Appareil extends Model {
   nom: string;
   @Column
   description: string;
+  // @Column
+  // max: number;
   @Column
   alume: number;
+
 }

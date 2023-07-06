@@ -52,7 +52,7 @@ export class AppareilService {
   }
 
   async getAll() {
-    return await this.appareil.findAll().then((value) => {
+    return await this.appareil.findAll({where:{id:{}}}).then((value) => {
       if (!value)
         return {message: 'the element you want to delete does not exist', statusCode: 404}
       return value;

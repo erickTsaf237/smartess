@@ -10,6 +10,10 @@ export class AppareilController {
     create(@Body() newOpject: Appareil){
         return this.appareilService.create(newOpject);
     }
+    @Put('/source/:id')
+    updateRource(@Body() updatedOpject: any, @Param('id') id:string){
+        return this.appareilService.update(updatedOpject, id);
+    }
     @Put('/:id')
     update(@Body() updatedOpject: any, @Param('id') id:string){
         return this.appareilService.update(updatedOpject, id);

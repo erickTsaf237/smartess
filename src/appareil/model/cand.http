@@ -1,13 +1,13 @@
 
 
 ### Send POST candidat request with json body
-POST https://smartess.adaptable.app/appareil
+POST http://localhost:3000/appareil
 Content-Type: application/json
 
 {
-  "id": 2,
-  "nom": "empoule",
-  "alume": 1,
+  "id": 100,
+  "nom": "Source",
+  "alume": 0,
   "description": ""
 }
 
@@ -41,14 +41,14 @@ Content-Type: application/json
 }
 
 ### Send PUT candidat request with json body
-PUT http://localhost:3000/appareil/2
+PUT http://localhost:3000/appareil/7
 Content-Type: application/json
 
 {
-  "id": 1,
-  "nom": "empoule",
+  "id": 7,
+  "nom": "Fenetre",
   "alume": 1,
-  "description": "yo"
+  "description": ""
 }
 
 ### Send PUT request with json body
